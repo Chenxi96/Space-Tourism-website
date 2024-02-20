@@ -1,0 +1,49 @@
+$black: #0B0D17;
+$blue: #D0D6F9;
+$white: #FFFFFF;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('./assets/home/background-home-mobile.jpg');
+}
+
+h1 {
+  font-size: 9.375rem;
+}
+
+h2 {
+  font-size: 6.25rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+  letter-spacing: 4.75;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
