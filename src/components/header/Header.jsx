@@ -1,8 +1,8 @@
 
-import Logo from '../assets/shared/logo.svg'
-import hamburger from '../assets/shared/icon-hamburger.svg'
-import close from '../assets/shared/icon-close.svg'
-import styles from '../App.module.scss'
+import Logo from '../../assets/shared/logo.svg'
+import hamburger from '../../assets/shared/icon-hamburger.svg'
+import close from '../../assets/shared/icon-close.svg'
+import styles from './Header.module.scss'
 
 export default function Header() {
     return (

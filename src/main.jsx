@@ -4,13 +4,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
-import Header from './routes/Header.jsx'
+import Base from './routes/Base'
 import './index.scss'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header />
+    element: <Base />
   },
 ]);
 

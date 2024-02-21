@@ -1,0 +1,43 @@
+@use '../../index';
+
+.container {
+    width: 87.201%;
+    margin-top: 12.8%;
+    margin-inline: auto;
+}
+
+.container > p {
+    color: index.$blue;
+    text-align: center;
+    font-family: index.$Barlow;
+}
+
+.heading1 {
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    font-family: index.$Bellefair;
+}
+
+.body {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 24.465%;
+}
+
+.exploreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    background-color: index.$white;
+    border-radius: 100%;
+    color: index.$black;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
