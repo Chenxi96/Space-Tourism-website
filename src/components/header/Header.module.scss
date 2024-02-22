@@ -34,13 +34,22 @@
 
 .mobileContainer > a {
     color: index.$white;
-    margin-bottom: 32px;
+    padding-block: 5px 7px;
+    margin-bottom: 20px;
     margin-left: 32px;
 }
 
 
 .hamburger {
     display: block;
+}
+
+.menuContainer {
+    display: none;
+}
+
+.menuContainer a {
+    color: index.$white;
 }
 
 @media screen and (min-width: 768px) {
