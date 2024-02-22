@@ -41,6 +41,10 @@
     margin-left: 32px;
 }
 
+.mobileContainer > a:hover {
+    border-right: 4px solid index.$white;
+}
+
 .mobileContainer span {
     margin: 11px;
 }
