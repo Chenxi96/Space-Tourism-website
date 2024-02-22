@@ -53,7 +53,9 @@ img, picture, svg, video {
 }
 
 a {
+  font-family: 'Barlow Condensed';
   text-decoration: none;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {

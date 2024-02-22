@@ -18,18 +18,20 @@
 }
 
 .mobileContainer {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 254px;
     height: 100vh;
     top: 0;
     right: -25px;
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(81.55px);
 }
 
 .mobileContainer div {
-    margin-left: 100px;
+    padding-block: 2.496875rem 4.0599375rem;
+    margin-inline: 13.028125rem 1.653125rem;
 }
 
 .mobileContainer > a {
@@ -38,9 +40,20 @@
     margin-left: 32px;
 }
 
+.mobileContainer span {
+    margin: 11px;
+}
 
 .hamburger {
     display: block;
+}
+
+.menuContainer {
+    display: none;
+}
+
+.menuContainer a {
+    color: index.$white;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,7 +69,7 @@
         display: none;
     }
 
-    .mobileContainer {
+    .menuContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -67,19 +80,19 @@
         background-color: rgba(255, 255, 255, 0.04);
     }
 
-    .mobileContainer > img {
+    .menuContainer > img {
         display: none;
     }
 
-    .mobileContainer span {
+    .menuContainer span {
         display: none;
     }
 
-    .mobileContainer > a {
+    .menuContainer > a {
         margin: 0;
     }
 
-    .mobileContainer > a:hover {
+    .menuContainer > a:hover {
         text-decoration: underline;
         text-underline-offset: 250%;
         text-decoration-thickness: 2px;
