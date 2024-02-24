@@ -95,6 +95,8 @@
 
     .menuContainer > a {
         margin: 0;
+        font-size: 14px;
+        letter-spacing: 2.36px;
     }
 
     .menuContainer > a:hover {
@@ -102,4 +104,34 @@
         text-underline-offset: 250%;
         text-decoration-thickness: 2px;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+        margin-inline: 3.8195% 0;
+    }
+
+    .menuContainer span {
+        display: inline;
+        font-family: index.$Barlow;
+        font-weight: bold;
+        font-size: 16px;
+        margin-right: 11px;
+    }
+
+    .menuContainer > a:hover {
+        text-decoration: none;
+        padding-block: 38px 35px;
+        border-bottom: 3px solid index.$white;
+    }
+
+    .menuContainer a {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .menuContainer p {
+        text-indent: 10px;
+    }
+
 }

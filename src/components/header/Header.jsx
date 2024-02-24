@@ -29,10 +29,10 @@ export default function Header() {
                 </div>
                 )}
                 <div className={styles.menuContainer}>
-                    <a href=""><span>00</span>HOME</a>
-                    <a href=""><span>01</span>DESTINATION</a>
-                    <a href=""><span>02</span>CREW</a>
-                    <a href=""><span>03</span>TECHNOLOGY</a>
+                    <a href=""><p><span>00</span>HOME</p></a>
+                    <a href=""><p><span>01</span>DESTINATION</p></a>
+                    <a href=""><p><span>02</span>CREW</p></a>
+                    <a href=""><p><span>03</span>TECHNOLOGY</p></a>
                 </div>
             </nav>
         </header>
