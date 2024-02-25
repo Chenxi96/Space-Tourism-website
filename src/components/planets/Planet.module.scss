@@ -1,0 +1,74 @@
+@use '../../index';
+
+body {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 26px;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 63.334%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.isActive {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+.isPending {
+    border-bottom: none;
+}
+
+.navContainer > li {
+    list-style: none;
+}
+
+.navContainer > li:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+.heading1 {
+    font-size: 56px;
+    font-family: index.$Bellefair;
+    text-align: center;
+}
+
+.description {
+    font-size: 15px;
+    font-family: index.$Barlow;
+    width: 87.201%;
+    margin-inline: auto;
+    margin-bottom: 32px;
+    color: index.$blue;
+}
+
+.infoContainer {
+    border-top: 1px solid index.$blue;
+    width: 87.201%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.title {
+    margin-top: 32px;
+    font-size: 14px;
+    color: index.$blue;
+}
+
+.info {
+    margin-top: 12px;
+    font-size: 28px;
+}
