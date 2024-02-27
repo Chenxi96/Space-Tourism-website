@@ -1,12 +1,16 @@
 @use '../../index';
 
 .container {
+    margin-inline: auto;
+}
+
+.wrapper {
     width: 87.201%;
     margin-top: 12.8%;
     margin-inline: auto;
 }
 
-.container > p {
+.wrapper > p {
     color: index.$blue;
     text-align: center;
     font-family: index.$Barlow;
@@ -39,7 +43,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .wrapper {
         margin-top: 13.803%;
         width: 28.125rem;
     }
@@ -47,10 +51,12 @@
     .heading1 {
         font-size: 9.375rem;
         line-height: 150px;
+        margin-bottom: 2rem;
     }
 
     .heading2 {
         font-size: 1.25rem;
+        margin-bottom: 2rem;
     }
 
     .body {
@@ -63,4 +69,42 @@
         width: 242px;
         height: 242px;
     }
+}
+
+
+@media screen and (min-width: 992px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .wrapper {
+            margin-top: 15.625rem;
+        }
+
+        .body {
+            margin: 0;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        .heading2 {
+            font-size: 28px;
+            letter-spacing: 4.72px;
+        }
+
+        .heading1 {
+            letter-spacing: 0px;
+        }
+
+        .exploreBtnContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .exploreBtn {
+            width: 274px;
+            height: 274px;
+        }
 }
