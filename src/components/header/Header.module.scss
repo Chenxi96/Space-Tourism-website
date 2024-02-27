@@ -3,11 +3,9 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-inline: 24px;
-}
-
-.imgLogo {
-    padding-block: 24px;
+    padding-top: 24px;
 }
 
 .navContainer {
@@ -23,7 +21,7 @@
     position: absolute;
     width: 254px;
     height: 100vh;
-    top: 0;
+    top: -50px;
     right: -25px;
     background-color: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(81.55px);
@@ -64,6 +62,8 @@
 @media screen and (min-width: 768px) {
     .container {
         margin-inline: 39px 0;
+        padding-top: 0;
+        height: 96px;
     }
 
     .navContainer {
@@ -72,6 +72,10 @@
 
     .hamburger {
         display: none;
+    }
+
+    .navContainer {
+        height: 100%;
     }
 
     .menuContainer {

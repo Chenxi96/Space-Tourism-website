@@ -21,9 +21,6 @@ $Barlow: 'Barlow Condensed';
 
 body {
   min-height: 100vh;
-  background-image: url('./assets/home/background-home-mobile.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h1 {
@@ -59,14 +56,36 @@ a {
   color: $blue;
 }
 
+.baseContainer {
+  min-height: 100vh;
+  background-image: url('./assets/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destinationContainer {
+  min-height: 100vh;
+  background-image: url('./assets/destination/background-destination-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
-  body {
+  .baseContainer {
     background-image: url('./assets/home/background-home-tablet.jpg');
+  }
+
+  .destinationContainer {
+    background-image: url('./assets/destination/background-destination-tablet.jpg');
   }
 }
 
 @media screen and (min-width: 992px) {
-  body {
+  .baseContainer {
     background-image: url('./assets/home/background-home-desktop.jpg');
+  }
+
+  .destinationContainer {
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
   }
 }

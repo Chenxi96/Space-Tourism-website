@@ -21,12 +21,13 @@ export default function Planet() {
 
 
     return (
-        <>
+        <section className={styles.mainContainer}>
+            {console.log(location)}
             <div className={styles.container}>
-                <p><span>01</span>PICK YOUR DESTINATION</p>
-                {planet.images && <img src={planet.images['png']} alt="" height={170} width={170} />}
+                <p className={styles.headingTitle}><span>01</span>PICK YOUR DESTINATION</p>
+                {planet.images && <img className={styles.planetImage} src={planet.images['png']} alt="" height={170} width={170} />}
             </div>
-            <div>
+            <div className={styles.secondContainer}>
                 <nav>
                     <ul className={styles.navContainer}>
                         <li><Link to={location.pathname === '/Destination' ? '0' : '../0'} aria-current='page' className={location.pathname === '/Destination/0' || location.pathname === '/Destination' ? `${styles.isActive}` : `${styles.isPending}`} relative="path">MOON</Link></li>
@@ -48,6 +49,6 @@ export default function Planet() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

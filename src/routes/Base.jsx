@@ -5,9 +5,9 @@ import Home from "../components/home/Home"
 
 export default function Base() {
     return (
-        <>
+        <div className="baseContainer">
             <Header />
             <Outlet />
-        </>
+        </div>
     )
 }

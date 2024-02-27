@@ -1,23 +1,25 @@
 @use '../../index';
 
-body {
-    background-image: url('../../assets/destination/background-destination-mobile.jpg');
-}
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     margin-bottom: 26px;
+    margin-top: 24px;
 }
 
 .navContainer {
     display: flex;
-    justify-content: space-evenly;
-    width: 63.334%;
+    justify-content: space-between;
+    width: min(63.334%, 285.5px);
     margin-inline: auto;
     margin-bottom: 20px;
+}
+
+.planetImage {
+    height: clamp(170px, 39.063%, 27.8125rem);
+    width: clamp(170px, 39.063%, 27.8125rem);
 }
 
 .isActive {
@@ -49,15 +51,15 @@ body {
 .description {
     font-size: 15px;
     font-family: index.$Barlow;
-    width: 87.201%;
+    width: min(575px, 87.2%);
     margin-inline: auto;
-    margin-bottom: 32px;
+    margin-bottom: clamp(32px, 5.99%, 3.375rem);
     color: index.$blue;
 }
 
 .infoContainer {
     border-top: 1px solid index.$blue;
-    width: 87.201%;
+    width: min(575px, 87.2%);
     margin-inline: auto;
     text-align: center;
 }
@@ -71,4 +73,73 @@ body {
 .info {
     margin-top: 12px;
     font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
+
+    .headingTitle {
+        align-self: flex-start;
+        margin-left: 38.5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    }
+
+    .container {
+        margin: 0;
+        width: 68.049%;
+        justify-self: center;
+    }
+
+    .planetImage {
+        width: 27.8125rem;
+        height: 27.8125rem;
+    }
+
+    .headingTitle{
+        margin: 0;
+    }
+
+
+    .mainContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 76px;
+    }
+
+    .secondContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 59.492%;
+        justify-self: center;
+    }
+
+    .navContainer {
+        margin-inline: 0;
+    }
+
+    .heading1 {
+        font-size: 150px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .description {
+        margin-inline: 0;
+    }
+
+    .infoContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 79px;
+        margin-inline: 0;
+    }
 }

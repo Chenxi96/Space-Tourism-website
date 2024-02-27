@@ -23,7 +23,7 @@ export default function Header() {
                     <div>
                         <img onClick={toggleDropdown} src={close} alt="" width={19.09} height={19.09}/>
                     </div>
-                    <Link to="/"><span>00</span>HOME</Link>
+                    <Link to="/" ><span>00</span>HOME</Link>
                     <Link to="Destination"><span>01</span>DESTINATION</Link>
                     <Link to="Crew"><span>02</span>CREW</Link>
                     <Link to="Technology"><span>03</span>TECHNOLOGY</Link>
@@ -31,9 +31,9 @@ export default function Header() {
                 )}
                 <div className={styles.menuContainer}>
                     <Link to="/"><p><span>00</span>HOME</p></Link>
-                    <Link to="destination"><p><span>01</span>DESTINATION</p></Link>
-                    <Link to="crew"><p><span>02</span>CREW</p></Link>
-                    <Link to="technology"><p><span>03</span>TECHNOLOGY</p></Link>
+                    <Link to={location.pathname === "/Destination" ? '../Destination' : '/Destination'}><p><span>01</span>DESTINATION</p></Link>
+                    <Link to="Crew"><p><span>02</span>CREW</p></Link>
+                    <Link to="Technology"><p><span>03</span>TECHNOLOGY</p></Link>
                 </div>
             </nav>
         </header>
