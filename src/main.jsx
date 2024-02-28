@@ -6,10 +6,11 @@ import {
 } from 'react-router-dom'
 import Base from './routes/Base'
 import Destination from './routes/Destination'
-import './index.scss'
-import Header from './components/header/Header'
+import Crew from './routes/Crew'
 import Home from './components/home/Home'
 import Planet from './components/planets/Planet'
+import CrewMates from './components/crewMates/CrewMates'
+import './index.scss'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,13 @@ const router = createBrowserRouter([
         path: ':name',
         element: <Planet />,
       }
+    ]
+  },
+  {
+    path: 'crew',
+    element: <Crew />,
+    children: [
+      {index: true, element: <CrewMates />}
     ]
   }
 ]);

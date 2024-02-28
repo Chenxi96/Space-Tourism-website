@@ -1,0 +1,58 @@
+@use '../../index.scss';
+
+.navContainer {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    justify-content: center;
+    margin-block: 32px;
+}
+
+.bioContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bioWrapper {
+    text-align: center;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    width: 87.201%;
+    margin-inline: auto;
+    border-bottom: 1px solid #383B4B;
+}
+
+.role {
+    font-family: index.$Bellefair;
+}
+
+.heading3 {
+    font-size: 24px;
+    margin-block: 8px 16px;
+}
+
+.bio {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.title {
+    text-align: center;
+    margin-block: 24px 32px;
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #979797;
+    border-radius: 100%;
+}
