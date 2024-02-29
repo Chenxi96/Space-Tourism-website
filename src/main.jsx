@@ -35,7 +35,11 @@ const router = createBrowserRouter([
     path: 'crew',
     element: <Crew />,
     children: [
-      {index: true, element: <CrewMates />}
+      {index: true, element: <CrewMates />},
+      {
+        path: ':crew',
+        element: <CrewMates />
+      }
     ]
   }
 ]);

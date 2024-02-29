@@ -8,6 +8,14 @@
     margin-block: 32px;
 }
 
+.isActive > span {
+    background-color: index.$white;
+}
+
+.isPending > span {
+    background-color: #979797;
+}
+
 .bioContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -15,6 +23,8 @@
 
 .bioWrapper {
     text-align: center;
+    width: 87.201%;
+    margin-inline: auto;
 }
 
 .imgContainer {
@@ -25,18 +35,27 @@
     border-bottom: 1px solid #383B4B;
 }
 
+.crewImage {
+    width: 54.165%;
+    max-width: 568.07px;
+}
+
 .role {
     font-family: index.$Bellefair;
+    text-transform: uppercase;
+    opacity: 0.5;
 }
 
 .heading3 {
     font-size: 24px;
     margin-block: 8px 16px;
+    text-transform: uppercase;
 }
 
 .bio {
     font-size: 15px;
     line-height: 25px;
+    font-family: index.$Barlow;
 }
 
 .title {
@@ -55,4 +74,41 @@
     height: 10px;
     background-color: #979797;
     border-radius: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+
+    .mainContainer {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .subContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .role {
+        font-size: 24px;
+    }
+
+    .heading3 {
+        font-size: 40px;
+    }
+
+    .bio {
+        font-size: 16px;
+    }
+
+    .bioContainer {
+        display: flex;
+        flex-direction: column;
+        width: 66.263%;
+        margin-inline: auto;
+    }
+
 }

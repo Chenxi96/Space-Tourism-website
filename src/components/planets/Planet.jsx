@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import moon from '../../assets/destination/image-moon.png'
 import styles from './Planet.module.scss'
 
 export default function Planet() {
@@ -22,7 +21,6 @@ export default function Planet() {
 
     return (
         <section className={styles.mainContainer}>
-            {console.log(location)}
             <div className={styles.container}>
                 <p className={styles.headingTitle}><span>01</span>PICK YOUR DESTINATION</p>
                 {planet.images && <img className={styles.planetImage} src={planet.images['png']} alt="" height={170} width={170} />}
