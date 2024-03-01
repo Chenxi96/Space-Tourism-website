@@ -49,6 +49,11 @@ img, picture, svg, video {
   max-width: 100%;
 }
 
+span {
+  opacity: 0.2;
+  margin-right: 1rem;
+}
+
 a {
   font-family: 'Barlow Condensed';
   text-decoration: none;
@@ -89,17 +94,17 @@ a {
 
 @media screen and (min-width: 992px) {
   .baseContainer {
+    padding-top: 40px;
     background-image: url('./assets/home/background-home-desktop.jpg');
-    overflow: hidden;
   }
 
   .destinationContainer {
+    padding-top: 40px;
     background-image: url('./assets/destination/background-destination-desktop.jpg');
-    overflow: hidden;
   }
 
   .crewContainer {
+    padding-top: 40px;
     background-image: url('./assets/crew/background-crew-desktop.jpg');
-    overflow: hidden;
   }
 }

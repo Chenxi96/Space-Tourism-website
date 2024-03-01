@@ -8,11 +8,12 @@
     margin-block: 32px;
 }
 
-.isActive > span {
+.isActive > .circle {
     background-color: index.$white;
+    opacity: 1;
 }
 
-.isPending > span {
+.isPending > .circle {
     background-color: #979797;
 }
 
@@ -38,7 +39,6 @@
 .crewImage {
     width: 54.165%;
     max-width: 568.07px;
-    max-height: 712px;
 }
 
 .role {
@@ -174,5 +174,4 @@
         align-self: flex-start;
         margin: 120px 0;
     }
-    
 }
