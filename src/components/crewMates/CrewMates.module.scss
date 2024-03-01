@@ -8,11 +8,12 @@
     margin-block: 32px;
 }
 
-.isActive > span {
+.isActive > .circle {
     background-color: index.$white;
+    opacity: 1;
 }
 
-.isPending > span {
+.isPending > .circle {
     background-color: #979797;
 }
 

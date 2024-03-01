@@ -31,7 +31,7 @@ export default function CrewMates() {
                         <h3 className={styles.heading3}>{crewMate.name}</h3>
                         <p className={styles.bio}>{crewMate.bio}</p>
                     </div>
-                    <nav>
+                    <nav className={styles.nav}>
                         <ul className={styles.navContainer}>
                             <li>
                                 <Link to={location.pathname === '/Crew' ? '0' : '../0'} className={location.pathname === '/Crew/0' || location.pathname === '/Crew' ? styles.isActive : styles.isPending}><span className={styles.circle}></span></Link>
