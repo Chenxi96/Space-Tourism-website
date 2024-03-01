@@ -38,6 +38,7 @@
 .crewImage {
     width: 54.165%;
     max-width: 568.07px;
+    max-height: 712px;
 }
 
 .role {
@@ -111,4 +112,67 @@
         margin-inline: auto;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    .subContainer {
+        display: grid;
+        margin-top: 62px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imgContainer {
+        border-bottom: none;
+    }
+
+    .crewImage {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .mainContainer {
+        position: relative;
+        overflow: hidden;
+        padding-left: 93px;
+    }
+
+    .title {
+        position: absolute;
+        font-size: 28px;
+        margin-block: 76px 154px;
+    }
+
+    .role {
+        font-size: 32px;
+    }
+
+
+    .bioContainer {
+        width: 100%;
+    }
+
+    .heading3 {
+        font-size: 56px;
+        margin-block: 15px 27px;
+    }
+
+    .bioWrapper {
+        text-align: left;
+        margin-top: 202px;
+        margin-inline: 0;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .navContainer {
+        align-self: flex-start;
+        margin: 120px 0;
+    }
+    
 }
