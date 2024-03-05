@@ -7,7 +7,6 @@
     font-family: index.$Barlow;
 }
 
-
 .listContainer {
     display: flex;
     list-style: none;
@@ -17,6 +16,28 @@
 }
 
 .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid index.$white;
+}
+
+.isActive {
+    background-color: index.$white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid index.$white;
+}
+
+.isPending {
+    background-color: index.$black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,3 +69,4 @@
     color: index.$blue;
     line-height: 25px;
 }
+
