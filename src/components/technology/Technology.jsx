@@ -24,7 +24,7 @@ export default function Technology() {
             <div className={styles.image}>
             {technology.images && <img className={styles.technologyImage} src={technology.images.landscape} alt="" width={375} height={170} />}
             </div>
-            <div>
+            <div className={styles.mainContainer}>
                 <nav>
                     <ul className={styles.listContainer}>
                         <li>
