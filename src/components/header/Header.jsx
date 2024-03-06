@@ -30,10 +30,10 @@ export default function Header() {
                 </div>
                 )}
                 <div className={styles.menuContainer}>
-                    <Link to="/"><p><span>00</span>HOME</p></Link>
-                    <Link to={location.pathname === "/" ? 'Destination' : '../Destination'}><p><span>01</span>DESTINATION</p></Link>
-                    <Link to={location.pathname === "/" ? 'Crew' : '../Crew'}><p><span>02</span>CREW</p></Link>
-                    <Link to={location.pathname === "/" ? 'Technology' : '../Technology'}><p><span>03</span>TECHNOLOGY</p></Link>
+                    <Link to="/" className={location.pathname === '/' ? `${styles.isActive}` : `${styles.isPending}`}><p><span>00</span>HOME</p></Link>
+                    <Link to={location.pathname === "/" ? 'Destination' : '../Destination'} className={location.pathname === '/Destination' ? `${styles.isActive}` : `${styles.isPending}`}><span>01</span><p>DESTINATION</p></Link>
+                    <Link to={location.pathname === "/" ? 'Crew' : '../Crew'} className={location.pathname === '/Crew' ? `${styles.isActive}` : `${styles.isPending}`}><p><span>02</span>CREW</p></Link>
+                    <Link to={location.pathname === "/" ? 'Technology' : '../Technology'} className={location.pathname === '/Technology' ? `${styles.isActive}` : `${styles.isPending}`}><p><span>03</span>TECHNOLOGY</p></Link>
                 </div>
             </nav>
         </header>

@@ -118,14 +118,13 @@
         text-decoration-thickness: 2px;
     }
 
-    .isActive {
-        text-decoration: underline;
-        text-underline-offset: 250%;
-        text-decoration-thickness: 2px;
+    .isActive{
+        padding-block: 35px;
+        border-bottom: 2px solid index.$white;
     }
 
     .isPending {
-        text-decoration: none;
+        border-bottom: none;
     }
 }
 
