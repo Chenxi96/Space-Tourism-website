@@ -22,16 +22,6 @@
     height: 100%;
 }
 
-.list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 1px solid index.$white;
-}
-
 .isActive {
     background-color: index.$white;
     display: flex;
@@ -42,6 +32,7 @@
     border-radius: 100%;
     border: 1px solid index.$white;
     color: index.$black;
+    font-family: index.$Bellefair;
 }
 
 .isPending {
@@ -53,6 +44,7 @@
     height: 40px;
     border-radius: 100%;
     border: 1px solid index.$white;
+    font-family: index.$Bellefair;
 }
 
 .descriptionContainer {
@@ -110,4 +102,69 @@
         margin-left: 38.5px;
         margin-block: 40px 60px;
     }
+}
+
+
+@media screen and (min-width: 992px) {
+    .title {
+        position: absolute;
+        margin-left: 11.459%;
+    }
+
+    .mainWrapper {
+        display: grid;
+        grid-template-columns: 64% 1fr;
+        position: relative;
+    }
+
+    .image {
+       order: 2;
+       margin-left: auto;
+       margin-top: 136px;
+    }
+
+    .mainContainer {
+        order: 1;
+    }
+
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .descriptionContainer {
+        width: 51%;
+        text-align: left;
+    }
+
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+    }
+
+    .headingName {
+        font-size: 56px;
+        letter-spacing: 0;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .isActive {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .isPending {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
 }

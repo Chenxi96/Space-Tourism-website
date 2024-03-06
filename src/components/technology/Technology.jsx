@@ -19,10 +19,11 @@ export default function Technology() {
     }, [technologyRoute])
 
     return(
-        <div>
+        <div className={styles.mainWrapper}>
             <p className={styles.title}><span>03</span>SPACE LAUNCH 101</p>
             <div className={styles.image}>
-            {technology.images && <img className={styles.technologyImage} src={technology.images.landscape} alt="" width={375} height={170} />}
+            {technology.images && innerWidth < 992 && <img className={styles.technologyImage} src={technology.images.landscape} alt="" width={375} height={170} />}
+            {technology.images && innerWidth > 992 && <img className={styles.technologyImage} src={technology.images.portrait} alt="" width={375} height={170} />}
             </div>
             <div className={styles.mainContainer}>
                 <nav>
