@@ -23,17 +23,17 @@ export default function Header() {
                     <div>
                         <img onClick={toggleDropdown} src={close} alt="" width={19.09} height={19.09}/>
                     </div>
-                    <Link to="/" ><span>00</span>HOME</Link>
-                    <Link to="Destination"><span>01</span>DESTINATION</Link>
-                    <Link to="Crew"><span>02</span>CREW</Link>
-                    <Link to="Technology"><span>03</span>TECHNOLOGY</Link>
+                    <Link to="/" className={location.pathname === '/' ? `${styles.isActiveMobile}` : `${styles.isPendingMobile}`} ><span>00</span>HOME</Link>
+                    <Link to={location.pathname === "/" ? 'Destination' : '../Destination'} className={location.pathname === '/Destination' ? `${styles.isActiveMobile}` : `${styles.isPendingMobile}`} ><span>01</span>DESTINATION</Link>
+                    <Link to={location.pathname === "/" ? 'Crew' : '../Crew'} className={location.pathname === '/Crew' ? `${styles.isActiveMobile}` : `${styles.isPendingMobile}`}><span>02</span>CREW</Link>
+                    <Link to={location.pathname === "/" ? 'Technology' : '../Technology'} className={location.pathname === '/Technology' ? `${styles.isActiveMobile}` : `${styles.isPendingMobile}`}><span>03</span>TECHNOLOGY</Link>
                 </div>
                 )}
                 <div className={styles.menuContainer}>
                     <Link to="/"><p><span>00</span>HOME</p></Link>
-                    <Link to={location.pathname === "/Destination" ? '../Destination' : '/Destination'}><p><span>01</span>DESTINATION</p></Link>
-                    <Link to="Crew"><p><span>02</span>CREW</p></Link>
-                    <Link to="Technology"><p><span>03</span>TECHNOLOGY</p></Link>
+                    <Link to={location.pathname === "/" ? 'Destination' : '../Destination'}><p><span>01</span>DESTINATION</p></Link>
+                    <Link to={location.pathname === "/" ? 'Crew' : '../Crew'}><p><span>02</span>CREW</p></Link>
+                    <Link to={location.pathname === "/" ? 'Technology' : '../Technology'}><p><span>03</span>TECHNOLOGY</p></Link>
                 </div>
             </nav>
         </header>
