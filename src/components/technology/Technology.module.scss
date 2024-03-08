@@ -5,8 +5,8 @@
     margin-block: 24px 2rem;
     text-align: center;
     font-family: index.$Barlow;
+    letter-spacing: 3.38px;
 }
-
 
 .listContainer {
     display: flex;
@@ -16,7 +16,14 @@
     margin-block: 34px 26px;
 }
 
-.list {
+.technologyImage {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.isActive {
+    background-color: index.$white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +31,20 @@
     height: 40px;
     border-radius: 100%;
     border: 1px solid index.$white;
+    color: index.$black;
+    font-family: index.$Bellefair;
+}
+
+.isPending {
+    background-color: index.$black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid index.$white;
+    font-family: index.$Bellefair;
 }
 
 .descriptionContainer {
@@ -40,6 +61,7 @@
     font-size: 24px;
     font-family: index.$Bellefair;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .description {
@@ -47,4 +69,107 @@
     font-family: index.$Barlow;
     color: index.$blue;
     line-height: 25px;
+}
+
+.mainContainer {
+    width: clamp(327px, 59.637%, 29.375rem);
+    margin-inline: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .listContainer {
+        margin-block: 56px 44px;
+    }
+    
+    .heading {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .headingName {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .title {
+        text-align: left;
+        margin-left: 38.5px;
+        margin-block: 40px 60px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .title {
+        position: absolute;
+        margin-left: 11.459%;
+        font-size: 28px;
+    }
+
+    .mainWrapper {
+        display: grid;
+        grid-template-columns: 64% 1fr;
+        position: relative;
+    }
+
+    .image {
+       order: 2;
+       margin-left: auto;
+       margin-top: 136px;
+    }
+
+    .mainContainer {
+        order: 1;
+    }
+
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .descriptionContainer {
+        width: 51%;
+        text-align: left;
+    }
+
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+    }
+
+    .headingName {
+        font-size: 56px;
+        letter-spacing: 0;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .isActive {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .isPending {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .isPending:hover {
+        border-width: 2px;
+    }
+
 }

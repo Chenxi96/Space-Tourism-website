@@ -9,7 +9,7 @@ export default function Home() {
                 <p className={styles.body}>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
             </div>
             <div className={styles.exploreBtnContainer}>
-                <a href="">
+                <a className={styles.exploreBtnMain} href="">
                     <p className={styles.exploreBtn}>EXPLORE</p>
                 </a>
             </div>

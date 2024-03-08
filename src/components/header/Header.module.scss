@@ -59,6 +59,15 @@
     color: index.$white;
 }
 
+.isActiveMobile {
+    border-right: 4px solid index.$white;
+}
+
+.isPendingMobile {
+    border-right: none;
+}
+
+
 @media screen and (min-width: 768px) {
     .container {
         margin-inline: 39px 0;
@@ -107,6 +116,15 @@
         text-decoration: underline;
         text-underline-offset: 250%;
         text-decoration-thickness: 2px;
+    }
+
+    .isActive{
+        padding-block: 35px;
+        border-bottom: 2px solid index.$white;
+    }
+
+    .isPending {
+        border-bottom: none;
     }
 }
 
