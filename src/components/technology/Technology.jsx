@@ -7,7 +7,7 @@ export default function Technology() {
     const [technology, setTechology] = useState({});
 
     useEffect(() => {
-        fetch('../../../data.json')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => {
                 if(location.pathname === '/Technology') {

@@ -10,7 +10,7 @@ export default function CrewMates() {
     const crew = useParams();
 
     useEffect(() => {
-        fetch('../../../data.json')
+        fetch('/data.json')
             .then(res => res.json())
             .then(data => {
                 if(location.pathname === '/Crew') {
